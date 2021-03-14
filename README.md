@@ -13,7 +13,13 @@ A docker image for running your existing strapi projects paired with a PostgreSQ
   > docker-compose.yml\
   > .dockerignore
 - Cross check the variables used in the `docker-compose.yml` file with your project's `.env` file
-- You're ready to go!
+- Almost done! Follow the next steps to connect your application to db. 
+
+#### Connecting application to database:
+- Firstly, make sure the variables referenced in the `docker-compose.yml` match the db variables used in the project's `.env` file
+- Make sure you point the database host to the `container-name` of the db. \
+  > In this example it will be `strapi-db`. If you do change the container name, then make sure to change the same in your project's `.env` file
+- Done! The app should now be configured to point to the db container mentioned in the `docker-compose.yml` file. 
 
 #### Running your project
 - Run the following command to start the project\
