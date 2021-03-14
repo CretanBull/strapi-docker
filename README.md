@@ -1,5 +1,5 @@
 # Strapi-docker
-A docker image for running your existing strapi projects paired with a PostgreSQL db in a container. This elminates the over-head of installing all the various softwares required for the project on your local machine and thus containminating the system. 
+A docker image for running your existing strapi projects paired with a PostgreSQL db in a container. This elminates the over-head of installing all the various softwares required for the project on your local machine and thus contaminating the system. 
 
 #### Prerequisites
 - Docker CE - https://docs.docker.com/get-docker/
