@@ -17,8 +17,14 @@ A docker image for running your existing strapi projects paired with a PostgreSQ
 
 #### Connecting application to database:
 - Firstly, make sure the variables referenced in the `docker-compose.yml` match the db variables used in the project's `.env` file
-- Make sure you point the database host to the `container-name` of the db. \
-  > In this example it will be `strapi-db`. If you do change the container name, then make sure to change the same in your project's `.env` file
+- Make sure you point the database host to the `container-name` of the db in your project's `.env` file
+  > In this example it will be `strapi-db`. If you do change the container name, then make sure to change the same in your project's `.env` file\
+  > \
+  > ex. of `.env file` in your projec'ts root directory\
+  > HOST=0.0.0.0\
+  > PORT=1337\
+  > DATABASE_HOST=strapi-db\
+  > DATABASE_PORT=5432
 - Done! The app should now be configured to point to the db container mentioned in the `docker-compose.yml` file. 
 
 #### Importing an existing db dump
