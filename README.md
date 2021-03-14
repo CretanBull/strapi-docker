@@ -8,7 +8,10 @@ A docker image for running your existing strapi projects paired with a PostgreSQ
 #### Installation steps
 - Download a zip of the repository
 - Extract the zip file
-- Copy the contents of the extracted folder to your project's root directory
+- Copy the contents of the extracted folder to your project's root directory *(Only copy the files mentioned below)*
+  > Dockerfile\
+  > docker-compose.yml\
+  > .dockerignore
 - Cross check the variables used in the `docker-compose.yml` file with your project's `.env` file
 - You're ready to go!
 
