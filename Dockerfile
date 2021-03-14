@@ -3,6 +3,9 @@ FROM strapi/base:12-alpine
 # SET WORKING DIRECTORY
 WORKDIR /srv/app
 
+# COPY THE PACKAGE.JSON FILES
+COPY ./package*.json ./
+
 # INSTALL DEPENDENCIES
 RUN yarn install
 
