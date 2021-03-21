@@ -1,5 +1,5 @@
 # Strapi-docker
-A docker image for running your existing strapi projects paired with a PostgreSQL db in a container. This elminates the over-head of installing all the various softwares required for the project on your local machine and thus contaminating the system. 
+A docker image for running your existing strapi projects paired with a PostgreSQL db in a container. This eliminates the over-head of installing all the various softwares required for the project on your local machine and thus contaminating the system. 
 
 #### Prerequisites
 - Docker CE - https://docs.docker.com/get-docker/
@@ -46,7 +46,7 @@ A docker image for running your existing strapi projects paired with a PostgreSQ
 `docker-compose up -d`\
 This command will start the docker in detached mode (i.e you will not be able to see the debug messages)
 
-- Alternatively, you could also start the docker in attached termainal mode to see the errors in real time with the following command:\
+- Alternatively, you could also start the docker in attached terminal mode to see the errors in real time with the following command:\
 `docker-compose up`. \
 To close the attached terminal mode just press `Ctrl + C`
 
