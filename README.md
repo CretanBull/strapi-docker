@@ -27,20 +27,6 @@ A docker image for running your existing strapi projects paired with a PostgreSQ
   > DATABASE_PORT=5432
 - Done! The app should now be configured to point to the db container mentioned in the `docker-compose.yml` file. 
 
-#### Importing an existing db dump
-- Get the docker id of the postgres container:\
-  `docker ps`
-  
-  Output will be similar to the following:
-  | CONTAINER ID |  IMAGE                     | ... |  NAMES     |
-  | ------------ | -------------------------- | --- |----------- |
-  | 65e813c2ce8b |  your_project_strapi       | ... | strapi-cms |
-  | 78e528453ced |  postgres                  | ... | strapi-db  |
-  
-- Copy the `CONTAINER ID` of the postgres image and then replace it in the following command:\
- `cat ./your-db-dump.sql | docker exec -i <CONTAINER ID> psql -U <DATABASE_USERNAME> -d <DATABASE_PASSWORD>`
-- Perfect! Your db is now fully populated and all you need to do is run your application by following the next steps. 
-
 #### Running your project
 - Run the following command to start the project\
 `docker-compose up -d`\
@@ -53,6 +39,14 @@ To close the attached terminal mode just press `Ctrl + C`
 #### Viewing the site in browser
 - Once the docker containers are up and running, you could just visit the site by hitting the following url in your broswer\
 `localhost:1337`
+
+
+#### Importing an existing db dump
+- Visit `localhost:8080` in your browser
+- This will open up the login screen of pgadmin. Enter the following credentails:
+  > `username: user@domain.com`\
+  > `password: secret`
+- Once you're logged into pgadmin you could easily import and alter your databases. 
 
 #### Stoppping the containers
 - You can always stop the containers once you're done with the project with the following command:\
