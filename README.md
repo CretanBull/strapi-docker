@@ -35,6 +35,11 @@ This command will start the docker in detached mode (i.e you will not be able to
 - Alternatively, you could also start the docker in attached terminal mode to see the errors in real time with the following command:\
 `docker-compose up`. \
 To close the attached terminal mode just press `Ctrl + C`
+>**:warning:Warning**: pgAdmin runs as the pgadmin user (UID: 5050) in the pgadmin group (GID: 5050) in the container. You must ensure that all files are readable, and where necessary (e.g. the `.pgadmin-data` directory) writeable for this user on the host machine. For example:
+>`sudo chown -R 5050:5050 /.pgadmin-data`
+
+
+
 
 #### Viewing the site in browser
 - Once the docker containers are up and running, you could just visit the site by hitting the following url in your broswer\
