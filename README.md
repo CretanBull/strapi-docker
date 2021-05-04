@@ -21,6 +21,8 @@ A docker image for running your existing strapi projects paired with a PostgreSQ
   > In this example it will be `strapi-db`. If you do change the container name, then make sure to change the same in your project's `.env` file\
   > \
   > ex. of `.env file` in your projec'ts root directory\
+  > UID=1000\
+  > GID=1000\
   > HOST=0.0.0.0\
   > PORT=1337\
   > DATABASE_HOST=strapi-db\
