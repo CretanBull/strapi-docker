@@ -2,6 +2,7 @@ version: '3'
 services:
   strapi:
     container_name: strapi-cms
+    user: "${UID}:${GID}"
     build: .
     volumes:
       - .:/srv/app
